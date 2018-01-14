@@ -7,8 +7,7 @@ import { Server } from 'colyseus';
 // Require ChatRoom handler
 import { GameRoom } from "./rooms/GameRoom";
 
-const host = String(process.env.COLYSEUS_HOST || 'localhost');
-const port = Number(process.env.COLYSEUS_PORT || 39844);
+const port = Number(39844);
 const app = express();
 
 // Create HTTP Server
@@ -20,6 +19,6 @@ const gameServer = new Server({ server: httpServer });
 // Register ChatRoom as "chat"
 gameServer.register("chat", GameRoom);
 
-gameServer.listen(port, host, 0, () => {
-    console.log(`Listening5 on ${host}:${ port }`);
+gameServer.listen(port, '', 0, () => {
+    console.log(`Listening5 on ${ port }`);
 });
