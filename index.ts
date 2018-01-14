@@ -19,6 +19,9 @@ const gameServer = new Server({ server: httpServer });
 // Register ChatRoom as "chat"
 gameServer.register("chat", GameRoom);
 
-gameServer.listen(port, '', 0, () => {
-    console.log(`Listening5 on ${ port }`);
-});
+app.use(express.static(path.join(__dirname, "static")));
+app.use('/', serveIndex(path.join(__dirname, "static"), {'icons': true}))
+
+gameServer.listen(port);
+
+console.log(`Listening on ${ port }`);
