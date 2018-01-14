@@ -19,6 +19,6 @@ const gameServer = new Server({ server: httpServer });
 // Register ChatRoom as "chat"
 gameServer.register("chat", GameRoom);
 
-gameServer.listen(port, 'localhost', 0, () => {
-    console.log(`Listening4 on http://localhost:${ port }`);
+gameServer.listen(port, 'halomegames-colyseus-unity-1.herokuapp.com', 0, () => {
+    console.log(`Listening5 on halomegames-colyseus-unity-1.herokuapp.com:${ port }`);
 });
