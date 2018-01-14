@@ -4,5 +4,12 @@
         "target": "es5",
         "noImplicitAny": false,
         "sourceMap": false
-    }
+    },
+    "include": [
+        "rooms/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
