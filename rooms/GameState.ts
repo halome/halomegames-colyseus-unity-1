@@ -16,12 +16,6 @@ class GameState {
         delete this.players[id];
     }
 
-    public UpdatePlayer(player: Player) {
-        this.players[player.id].position = {
-            ...player.position,
-        };
-    }
-
     public GetPlayerById(id: string): Player {
         return this.players[id];
     }

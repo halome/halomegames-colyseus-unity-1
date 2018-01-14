@@ -2,6 +2,7 @@ import { Room } from "colyseus";
 
 import GameState from './GameState';
 import Player from './player/Player';
+import Vector3 from './Vector3';
 
 export class GameRoom extends Room<GameState> {
     maxClients = 6;
@@ -36,7 +37,7 @@ export class GameRoom extends Room<GameState> {
 
         switch (data.action) {
             case 'update_position': {
-                player.position = data.position;
+                player.position = Vector3.fromJSON(data.position);
                 break;
             }
         }

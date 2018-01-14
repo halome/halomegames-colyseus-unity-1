@@ -7,7 +7,8 @@ import { Server } from 'colyseus';
 // Require ChatRoom handler
 import { GameRoom } from "./rooms/GameRoom";
 
-const port = Number(process.env.PORT || 2657);
+const host = String(process.env.HOST || 'localhost');
+const port = Number(process.env.PORT || 39844);
 const app = express();
 
 // Create HTTP Server
@@ -19,6 +20,6 @@ const gameServer = new Server({ server: httpServer });
 // Register ChatRoom as "chat"
 gameServer.register("chat", GameRoom);
 
-gameServer.listen(port, 'halomegames-colyseus-unity-1.herokuapp.com', 0, () => {
-    console.log(`Listening5 on halomegames-colyseus-unity-1.herokuapp.com:${ port }`);
+gameServer.listen(port, host, 0, () => {
+    console.log(`Listening5 on ${host}:${ port }`);
 });

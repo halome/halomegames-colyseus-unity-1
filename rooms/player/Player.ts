@@ -1,13 +1,14 @@
 import PlayerState from './PlayerState';
+import Vector3 from '../Vector3';
 
 class Player {
     public id: string;
-    public position: {x, y, z};
-    public rotation: {x, y, z};
+    public position: Vector3;
+    public rotation: Vector3;
     public speed: number;
     public state: PlayerState;
 
-    constructor(id: string, position = {x: 0, y: 0, z: 0}, rotation = {x: 0, y: 0, z: 0}, speed = 0) {
+    constructor(id: string, position = new Vector3(0, 0, 0), rotation = new Vector3(0, 0, 0), speed = 0) {
         this.id = id;
         this.state = PlayerState.STANDING;
         this.position = position;
