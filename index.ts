@@ -7,7 +7,7 @@ import { Server } from 'colyseus';
 // Require ChatRoom handler
 import { GameRoom } from "./rooms/GameRoom";
 
-const port = Number(39844);
+const port = Number(process.env.PORT || 39844);
 const app = express();
 
 // Create HTTP Server
