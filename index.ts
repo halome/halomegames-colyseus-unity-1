@@ -21,5 +21,5 @@ const gameServer = new Server({ server: httpServer });
 gameServer.register("chat", GameRoom);
 
 gameServer.listen(port, host, 0, () => {
-    console.log(`Listening2 on ${host}:${ port }`);
+    console.log(`Listening3 on ${host}:${ port }`);
 });
