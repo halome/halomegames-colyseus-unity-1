@@ -7,9 +7,6 @@ import { Server } from 'colyseus';
 // Require ChatRoom handler
 import { GameRoom } from "./rooms/GameRoom";
 
-console.log(`window.location.hostname = ${window.location.hostname}`);
-console.log(`window.location.protocol = ${window.location.protocol}`);
-
 const port = Number(process.env.PORT || 39844);
 const app = express();
 
