@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="bunny.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="Bunny_die_0.png"	x="0"	y="192"	width="31"	height="30" frameX="-1" frameY="-2" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_die_1.png"	x="0"	y="31"	width="32"	height="31" frameX="-0" frameY="-1" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_die_2.png"	x="0"	y="0"	width="32"	height="30" frameX="-0" frameY="-1" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_die_3.png"	x="0"	y="161"	width="31"	height="30" frameX="-0" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_die_4.png"	x="61"	y="0"	width="25"	height="32" frameX="-0" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_die_5.png"	x="0"	y="251"	width="1"	height="1" frameX="--2" frameY="--2" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_fall_0.png"	x="32"	y="125"	width="29"	height="27" frameX="-1" frameY="-5" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_fall_1.png"	x="32"	y="125"	width="29"	height="27" frameX="-1" frameY="-5" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_fall_2.png"	x="32"	y="125"	width="29"	height="27" frameX="-1" frameY="-5" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_fall_3.png"	x="0"	y="223"	width="30"	height="27" frameX="-0" frameY="-5" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_head_0.png"	x="33"	y="33"	width="19"	height="25" frameX="-6" frameY="-4" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_jump_0.png"	x="32"	y="185"	width="29"	height="30" frameX="-1" frameY="-2" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_jump_1.png"	x="32"	y="63"	width="29"	height="31" frameX="-3" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_run_0.png"	x="32"	y="153"	width="29"	height="31" frameX="-1" frameY="-1" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_run_1.png"	x="32"	y="185"	width="29"	height="30" frameX="-1" frameY="-2" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_run_2.png"	x="32"	y="125"	width="29"	height="27" frameX="-1" frameY="-5" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_run_3.png"	x="32"	y="95"	width="29"	height="29" frameX="-1" frameY="-3" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_splat_0.png"	x="0"	y="129"	width="31"	height="31" frameX="-1" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_splat_1.png"	x="0"	y="96"	width="31"	height="32" frameX="-0" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_splat_2.png"	x="0"	y="63"	width="31"	height="32" frameX="-0" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_splat_3.png"	x="33"	y="0"	width="27"	height="32" frameX="-0" frameY="-0" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_splat_4.png"	x="0"	y="251"	width="1"	height="1" frameX="--2" frameY="--2" frameWidth="32" frameHeight="32"/>
+	<SubTexture name="Bunny_stand_0.png"	x="31"	y="223"	width="29"	height="29" frameX="-1" frameY="-3" frameWidth="32" frameHeight="32"/>
+</TextureAtlas>
