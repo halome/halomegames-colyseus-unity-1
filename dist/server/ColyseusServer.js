@@ -5,7 +5,7 @@ const express = require("express");
 const colyseus_1 = require("colyseus");
 const ColyseusBaseRoom_1 = require("./room/ColyseusBaseRoom");
 class ColyseusServer {
-    constructor(port = 2657, endpoint = 'localhost') {
+    constructor(port, endpoint = 'localhost') {
         this.port = port;
         this.endpoint = endpoint;
         const app = express();

@@ -7,7 +7,7 @@ class ColyseusServer {
     port:number;
     endpoint:string;
 
-    constructor(port:number = 2657, endpoint:string = 'localhost') {
+    constructor(port:number, endpoint:string = 'localhost') {
         this.port = port;
         this.endpoint = endpoint;
 
