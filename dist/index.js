@@ -1,4 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const ColyseusServer_1 = require("./server/ColyseusServer");
-new ColyseusServer_1.default(Number(process.env.PORT || 26857), 'localhost');
+const http = require("http");
+const path = require("path");
+const serveIndex = require("serve-index");
+const express = require("express");
+const colyseus_1 = require("colyseus");
+const ColyseusServer_1 = require("./src/server/ColyseusServer");
+const app = express();
+const server = http.createServer(app);
+const gameServer = new colyseus_1.Server({ server: server });
+app.use(express.static(path.join(__dirname, "static")));
+app.use('/', serveIndex(path.join(__dirname, "static"), { 'icons': true }));
+new ColyseusServer_1.default(server, Number(process.env.PORT || 26857), 'localhost');

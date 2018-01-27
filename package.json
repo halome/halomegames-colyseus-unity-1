@@ -2,7 +2,7 @@
   "name": "server_colyseus_p2_ts",
   "version": "1.0.0",
   "description": "Colyseus server with P2",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "compile:dev": "tsc",
     "build:dev": "node ./dist/index.js",
