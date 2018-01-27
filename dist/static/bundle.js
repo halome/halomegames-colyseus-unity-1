@@ -1280,7 +1280,7 @@ class SimpleGame {
             this.entities.splice(this.entities.indexOf(entity, 0), 1);
         };
         this.entities = new Array();
-        this.client = new Colyseus.Client('ws://localhost:26857');
+        this.client = new Colyseus.Client('wss://halomegames-colyseus-unity-1.herokuapp.com');
         this.client.onOpen.addOnce(this.onClientOpen);
         this.room = this.client.join('ColyseusBaseRoom');
         this.room.onJoin.add(this.onRoomJoin);
