@@ -14,7 +14,7 @@ const gameServer = new Server({server: server});
 
 app.use(express.static(__dirname));
 // app.use(express.static(path.join(__dirname, "static")));
-// app.use('/', serveIndex(path.join(__dirname, "static"), {'icons': true}))
+app.use('/satic', serveIndex(path.join(__dirname, "static"), {'icons': true}))
 
 gameServer.register("ColyseusBaseRoom", ColyseusBaseRoom);
 gameServer.listen(port);
