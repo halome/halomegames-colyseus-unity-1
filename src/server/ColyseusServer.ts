@@ -6,7 +6,7 @@ class ColyseusServer {
     port:number;
     endpoint:string;
 
-    constructor(server: http.Server, port:number, endpoint:string = 'localhost') {
+    constructor(server: http.Server, port:number, endpoint:string) {
         this.port = port;
         this.endpoint = endpoint;
         const gameServer = new Server({server});

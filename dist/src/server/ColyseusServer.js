@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const colyseus_1 = require("colyseus");
 const ColyseusBaseRoom_1 = require("./room/ColyseusBaseRoom");
 class ColyseusServer {
-    constructor(server, port, endpoint = 'localhost') {
+    constructor(server, port, endpoint) {
         this.port = port;
         this.endpoint = endpoint;
         const gameServer = new colyseus_1.Server({ server });
